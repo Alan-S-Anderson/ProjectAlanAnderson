@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "BM25 search",
+  "version": "1.0",
+  "description": "Enable BM25 search of Wikipedia articles",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://en.wikipedia.org/*"
+      ]
+    }
+  ]
+}
